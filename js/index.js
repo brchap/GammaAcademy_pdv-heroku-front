@@ -29,7 +29,7 @@ function validar(){
             redirect: 'follow'
         };
 
-        fetch("http://localhost:8088/login", requestOptions)
+        fetch("http://pdvproject.herokuapp.com/login", requestOptions)
         .then(response => redirecionaPagina(response))
         //.then(result => console.log(result))
         .catch(error => console.log('error', error));

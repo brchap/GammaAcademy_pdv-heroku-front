@@ -1,6 +1,6 @@
 function carregaSelectPDV(){
 
-    fetch("http://localhost:8088/pdv/todos")   // "promessa de execução"
+    fetch("http://pdvproject.herokuapp.com/pdv/todos")   // "promessa de execução"
        .then(res => res.json())                // vou extrair o JSON do resultado que vier
        .then(lista => trataConteudoDaLista(lista));
 }
@@ -97,7 +97,7 @@ function cadastrarSolicitacao(){
             redirect: 'follow'
         };
 
-        fetch("http://localhost:8088/solicitacao/nova", requestOptions)
+        fetch("http://pdvproject.herokuapp.com/solicitacao/nova", requestOptions)
         .then(response => confirmaGravacao(response))
         //.then(result => console.log(result))
         .catch(error => console.log('error', error));

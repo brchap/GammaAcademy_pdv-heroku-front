@@ -2,7 +2,7 @@ function gerarPDF(){
     var parametro = window.location.search;
     var status = parametro.substr(8);
 
-    fetch("http://localhost:8088/solicitacao/status/"+status)
+    fetch("http://pdvproject.herokuapp.com/solicitacao/status/"+status)
       .then(res => res.json())
       .then(lista => preencheRelatorio(lista));
 

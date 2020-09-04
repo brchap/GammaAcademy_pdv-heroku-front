@@ -24,7 +24,7 @@ function carregaInfo(){
 }
 
 function onChangeSelectStatus(status){
-    var url = "http://localhost:8088/solicitacao/status/"+status;
+    var url = "http://pdvproject.herokuapp.com/solicitacao/status/"+status;
 
     fetch(url)   // "promessa de execução"
        .then(res => res.json())                // vou extrair o JSON do resultado que vier
@@ -104,7 +104,7 @@ function atualizarStatus(numReq, novoStatus){
             redirect: 'follow'
         };
 
-        url = "http://localhost:8088/solicitacao/atualiza"
+        url = "http://pdvproject.herokuapp.com/solicitacao/atualiza"
 
         fetch(url, requestOptions)
         .then(response => atualizaDash(response))
