@@ -1,0 +1,33 @@
+.container{
+    border: 3px solid white;
+    min-height: 500px
+    
+    }
+
+.fonteSLA{
+    color: rgba(2, 2, 49, 0.89);
+    font-size: 28px;
+    font-family: "Itau Display Black",helvetica;   
+}
+
+.fonteLogout{
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 28px;
+    font-family: "Itau Display Black",helvetica;   
+}
+
+.fonteSLALongo{
+    color: rgba(13, 13, 14, 0.61);
+    font-size: 28px;
+    font-family: "Itau Display",helvetica;   
+}
+
+.fundoLogout{
+    background-color: #1b192e;    
+   }
+
+.pwdby{
+    color : black;
+    font-size : 9px;
+    font-family : arial,helvetica;
+}
